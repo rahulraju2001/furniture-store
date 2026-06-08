@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woody</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- additional fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a class="brand" href="">
+        <i class="fa-solid fa-tree"></i>
+        <span class="brandname">Woody</span>
+      </a>
+      <!-- using checkbox instead of javascript-->
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="fa-solid fa-bars" id="menuicon"></i>
+        <i class="fa-solid fa-x" id="cancelicon"></i>
+      </label>
+      <ul class="navlinks">
+        <li class="links"><a href="#home" class="links">Home</a></li>
+        <li class="links"><a href="#products" class="links">Products</a></li>
+        <li class="links"><a href="#banner" class="links">About</a></li>
+        <li class="links"><a href="#contact" class="links">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Landing Page -->
+    <section class="hero" id="home">
+      <div class="herotext">
+        <h1 id="herotitle">Modern furniture for your home.</h1>
+        <p id="heropara">
+          Discover stylish and comfortable furniture for yor living room,
+          bedroom and office
+        </p>
+        <button class="herobutton">Shop Now</button>
+      </div>
+      <div class="heroimage">
+        <img
+          id="furnitureimage"
+          src="./images/Cozy Living Room Corner.png"
+          alt="No Image"
+        />
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div>
+        <h2 class="producthead">Our Products</h2>
+      </div>
+      <div class="productcontainer">
+        <div class="card">
+          <img
+            class="cardimg"
+            src="./images/Modern Cream Chair.png"
+            alt="No Image"
+          />
+          <h3 class="productname">Wooden Chair</h3>
+          <p class="price">$120</p>
+          <button class="herobutton">Buy Now</button>
+        </div>
+        <div class="card">
+          <img
+            class="cardimg"
+            src="./images/Modern Elegant Sofa.png"
+            alt="No Image"
+          />
+          <h3 class="productname">Elegant Sofa</h3>
+          <p class="price">$260</p>
+          <button class="herobutton">Buy Now</button>
+        </div>
+        <div class="card">
+          <img
+            class="cardimg"
+            src="./images/Modern Dining Area.png"
+            alt="No Image"
+          />
+          <h3 class="productname">Dining Table</h3>
+          <p class="price">$600</p>
+          <button class="herobutton">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    <section class="banner" id="banner">
+      <h2 class="abouthead">About Us</h2>
+      <p class="aboutpara">
+        <b
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et
+          natus cumque iste quasi nostrum reprehenderit quidem dignissimos,
+          nihil consectetur nobis totam at nesciunt amet. Doloremque quaerat qui
+          accusantium ipsam. Exercitationem maxime numquam asperiores vel omnis
+          quas voluptates doloremque ratione odit, quo libero aperiam voluptatem
+          labore eos iure facere corrupti sunt officia dolore nihil eligendi
+          molestiae fugiat. Esse, repudiandae neque.</b
+        >
+      </p>
+      <button class="herobutton aboutbutton">Lets Talk</button>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contacttext">
+        <h3 class="contacthead">Contact Us</h3>
+        <h4 class="contactph">+100-907864</h4>
+        <p class="contactmail">info@gmail.com</p>
+        <div class="socialicons">
+          <a class="smlink" href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="smlink" href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="smlink" href="" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <div class="subscribehead">
+        <h3>Join our mail list</h3>
+        <div class="box">
+          <input type="text" placeholder="email" class="subinput" />
+          <button class="herobutton">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <p>&copy; May 2026 Design by Rahul, All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

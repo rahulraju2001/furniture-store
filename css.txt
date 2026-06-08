@@ -1,0 +1,81 @@
+        CSS : Cascading Style Sheet
+    --------------------------------------
+
+    1. CSS used to style (change colors, add spacing, layout creation, add animations, responsive webpage) HTML elements
+    2. CSS Syntax :
+        selector {
+            property : value;
+        }
+    3. Ways to apply CSS to html Elements
+        - Inline CSS : inside HTML tag using style attribute, Syntax : style="property:value;"
+        - Internal CSS : using style tag
+        - External CSS (Recommend) : using seperate css file & link css file with html file
+    4. Selectors CSS : used to select html elements in css
+        - Element Selectors : using Tag name : 
+        - Id Selectors : using Id : use # symbol
+        - using class : use . symbol
+        - Universal selector : using universal selector : used to select all elements from a html page. use * symbol
+        - Grouping Selectors : using commas to seperate Selectors
+        - CSS Combinators : to select tag using combination of Selectors, used to define relatioship (parent, child etc..) between Selectors
+            - Combinators   Meaning
+                space       Descendant Selectors (all child)
+                  >         Get direct child of parent
+                  +         Immeadiate siblings
+                  ~         Select All siblings
+    5. Box Model : Content displayed in browser inside a box. Box has border, padding and margin
+        - Padding : space between content & border
+        - Margin : Space outside border
+    6. Display in CSS 
+        - Block : Full width element
+        - Inline : Content width only
+        - Inline-Block : Inline + width/height support
+        - none : hide elements
+        - flex : flexible layout (row / column)
+            - Container/Parent Element (used to contain items displayed as flex) : display should be set as flex
+            - Flex Items : 
+            - Properties Flexbox
+                - Direction : flex-direction
+                - Align items Horizontally : justify-content
+                - Align items vertically : align-items
+                - Spacing : gap
+                - Wrap : flex-wrap
+        - Grid : Used to layout items in 2 dimensional (rows & column). 
+            - Container /Parent element : display set as Grid
+            - Items : 
+            - Grid Properties
+                - Define column : grid-template-columns, flexible column use fr (fraction of available space) unit
+                - Define row : grid-template-row
+                - Space between rows and column : gap
+                - Align whole grid Horizontally   : justify-content
+                - Align whole grid vertically   : align-content
+                - Align items Horizontally : justify-items
+                - Align items vertically : align-items
+    7. Position
+        - static
+        - fixed
+        - absolute
+        - relative
+        - sticky
+    8. z-index : used to control overlapping of elements
+    9. Responsive website : use @media keyword
+        - media queries : can access page width , height & orientation
+        - It divides width to classify the different medium
+            - below 480px : Mobile
+            - 481 - 768px : Tablet
+            - 769 - 1024px : Laptop
+            - 1025 - 1200px : Desktop
+        - Syntax : @media (condition1 && condition2){
+            css style for specific device
+            selector{
+                property:value;
+            }
+        }
+    10. Color & Units
+        - Units : px(pixels), % (relative), em/rem (scalable), vw/vh (viewport size)
+        - Color : name , hexa-decimal value , rgb method
+    11. Box Shadow : The CSS box-shadow property adds shadow effects around an elements frame. Syntax : box-shadow: offset-x offset-y blur-radius spread-radius color;
+    12. Pseudo-class : A pseudo-class in CSS is used to define a special state of an HTML element without adding extra classes to the markup.
+        - Syntax : selector:pseudo-class {
+            property: value;
+            }
+        - pseudo-class : hover, active, focus, visited, link, first-child, checked
